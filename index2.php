@@ -1,15 +1,15 @@
 <!doctype html>
 <html lang="ru">
-  <head>
+  <head>    
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="style2.css">
-
     <title>Кофе-машина 2</title>
+    
+    
   </head>
   <body>
     <div class="container">
@@ -35,26 +35,35 @@
           </div>
         </div>
         <div class="col-6 coffee-oper"> <!--Правая сторона (операционная)-->
-          <div class="row"> </div>
+          <div class="row mt-2"> 
             <div class="col-6"> <!--Дисплей и кружка-->
               <div class="display">
                 <span class="display-text">Выберите кофе</span>
-                <div class="progress mt-2">
-                  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"> </div>
+                <div class="progress ">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated " role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
                 </div>
               </div>
               <div class="cup">
                 <img src="img/americano.png" alt="">
               </div>
-            </div> 
+            </div>
             <div class="col-6"> <!--Баланс АТМ сдача-->
-            
-            </div> 
-          </div>   
-        </div>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control balance" placeholder="Баланс">
+                <div class="input-group-append">
+                  <span class="input-group-text" >&#8381;</span>
+                </div>
+              </div>
+              <div class="atm">
+                <img src="img/bill_acc.png" alt="">
+              </div>
+              <button class="btn btn-primary btn-block mt-3">Сдача</button>
+              <div class="change-box mt-3"></div>
+            </div>
+          </div> 
+        </div>   
       </div>
     </div>
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
